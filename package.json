@@ -1,0 +1,61 @@
+{
+  "name": "re-re-reselect",
+  "version": "0.0.1",
+  "description": "Go one level deeper by further enhancing the performance of your selectors that are already being enhance-memoized by re-reselect wrapping reselect's selector memoization.",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel ./src -d ./lib --source-maps",
+    "lint": "eslint src/",
+    "test": "jest"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goldhand/re-re-reselect.git"
+  },
+  "keywords": [],
+  "author": "Will Farley <a.will.farley@gmail.com> (https://goldhand.github.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/goldhand/re-re-reselect/issues"
+  },
+  "homepage": "https://github.com/goldhand/re-re-reselect#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^7.2.3",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-env": "^1.6.0",
+    "eslint": "^4.6.1",
+    "eslint-config-airbnb-base": "^12.0.0",
+    "eslint-plugin-import": "^2.7.0",
+    "jest": "^21.0.2"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "4"
+          }
+        }
+      ]
+    ],
+    "plugins": [
+      "add-module-exports"
+    ],
+    "ignore": [
+      "./src/**/*.spec.js"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "airbnb-base",
+    "env": {
+      "jest": true,
+      "node": true,
+      "es6": true
+    }
+  }
+}
